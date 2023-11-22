@@ -12,6 +12,24 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/banner_dark" />
 
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_values" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_values" />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/url"
         android:layout_width="match_parent"
@@ -57,23 +75,6 @@
         android:layout_height="wrap_content"
         android:text="@string/e2ee_enabled_str" />
 
-    <Button
-        android:id="@+id/connect_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/connect" />
 
-    <Button
-        android:id="@+id/save_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/save_values" />
-
-    <Button
-        android:id="@+id/reset_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/reset_values" />
 
 </LinearLayout>
