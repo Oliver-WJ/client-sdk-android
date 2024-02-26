@@ -123,9 +123,12 @@ open class SimulcastVideoEncoderFactoryWrapper(
                 |    lossNotification=${settings.capabilities.lossNotification}
                         """.trimMargin()
                     }
+//              return@Callable encoder.initEncode(settings, callback)
+                try {
                     return@Callable encoder.initEncode(settings, callback)
-                },
-            )
+                } catch (_: Exception) {}
+                return@Callable VideoCodecStatus.ERROR
+            })
             return future.get()
         }
 
